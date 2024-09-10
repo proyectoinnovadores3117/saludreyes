@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro e Inicio de Sesión</h1>
+    </header>
+
+    <main>
+        <section id="registro">
+            <h2>Registro de Usuario</h2>
+            <form action="/registro" method="post">
+                <label for="nombre">Nombre del Alumno:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" required>
+
+                <button type="submit"><a href="index.html">Registrarse</a></button>
+            </form>
+        </section>
+
+        <section id="login-director-psicopedagoga">
+            <h2>Inicio de Sesión (Director/Psicopedagoga)</h2>
+            <form action="/login-director-psicopedagoga" method="post">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" required>
+
+                <button type="submit"><a href="index.html">Iniciar Sesión</a></button>
+            </form>
+        </section>
+
+        <section id="login-anonimo">
+            <h2>Inicio de Sesión Anónimo</h2>
+            <form action="/login-anonimo" method="post">
+                <button type="submit"><a href="index.html">Entrar como Anónimo</a></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Escuela</p>
+    </footer>
+</body>
+</html>
